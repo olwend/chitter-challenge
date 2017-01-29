@@ -1,0 +1,17 @@
+<h1> Welcome to Maker Peeps</h1></br>
+
+<h2> See most recent peeps below...</h2></br>
+<!--#if maker is logged in then show this-->
+<a href="peeps/new"> Go ahead peep...</a>
+<!--else -->
+<a href="session/log_in"> Existing user log in here </a>
+<a href="session/new"> Sign_Up here </a>
+
+
+<ol id='peeps'>
+  <% @peeps.each do |peep| %>
+    <li>Maker_id: <%= peep.maker_id %>
+        	says: <%= peep.peep_body %>
+    </li>
+  <% end %>
+</ol>
