@@ -4,14 +4,12 @@
 <!--#if maker is logged in then show this-->
 <a href="peeps/new"> Go ahead peep...</a>
 <!--else -->
-<a href="session/log_in"> Existing user log in here </a>
-<a href="session/new"> Sign_Up here </a>
+<a href="session/new"> Existing user log in here </a>
+<a href="users/new"> Sign_Up here </a>
 
-
-<ol id='peeps'>
-  <% @peeps.each do |peep| %>
-    <li>Maker_id: <%= peep.maker_id %>
-        	says: <%= peep.peep_body %>
-    </li>
-  <% end %>
-</ol>
+<ul id='peeps'>
+  <% @all_peeps.reverse.each do |show_peeps| %>
+  <p>
+    <li><%= show_peeps.peep  %> => <%= show_peeps.user.name %>
+    <% end %>
+  </ul>

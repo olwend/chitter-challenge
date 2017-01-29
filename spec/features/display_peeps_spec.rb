@@ -7,10 +7,10 @@ feature 'peeps display' do
   end
 
   xscenario 'I want to see peeps listed on page' do
-    Maker.log_in
-    Peep.create(peep_body: 'AAAA')
+    maker = Maker.log_in
+    maker.create(peep_body: 'AAAA')
     visit '/peeps'
-    within 'ul#peeps' do
+    within 'ol#peeps' do
     expect(page).to have_content('aa')
     end
   end

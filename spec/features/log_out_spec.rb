@@ -1,11 +1,8 @@
 
-feature 'logging out ' do
 # As a Maker
 # So that I can avoid others posting messages on Chitter as me
 # I want to log out of Chitter
-xscenario 'maker logs out' do
 
-end
 
 # As a Maker
 # So that I can leave PC sure that nobody can post as me
@@ -20,8 +17,5 @@ feature 'creating peeps' do
     within 'ul#peeps' do
       expect(page).to have_content('AAAA')
    end
-  end
-
-  # As a maker
-  # So that I an stay in touch
-  # I can still see peeps if not logged in
+end
+end
