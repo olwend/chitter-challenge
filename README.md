@@ -40,12 +40,17 @@ Notes on technologies used
 * Ruby classes link via DataMapper to a postgres database
 
 chitter_test=# SELECT * FROM makers;
+ id |     email     | password_digest | name |   handle    | logged_in 
+----+---------------+-----------------+------+-------------+-----------
+  3 | test@test.com |                 | test | test_handle | f
+(1 row)
 
- id | email | password_digest | name | handle
 
-chitter_test=# SELECT * FROM peeps;
-
- id | peep_body | peep_time | maker_id
+chitter_test=# select * from peeps;
+ id |   peep_body   |      peep_time      | maker_id 
+----+---------------+---------------------+----------
+  1 | First message | 2017-01-30 07:37:28 |        3
+(1 row)
 
  Link by DataMapper association (```maker has n, :peeps```) (```peep belongs_to :maker```)
 
