@@ -36,7 +36,7 @@ I want to see the time at which it was made
 Notes on technologies used
 ---------------------------
 
-* The app is written using tests capybaa /rspec tests as in 'red-green-refactor'
+* The app is written using tests capybara /rspec tests as in 'red-green-refactor'
 * The app is built using Sinatra modular framework
 * Ruby classes link via DataMapper to a postgres database
 
@@ -69,8 +69,8 @@ Git clone or download to a local directory.
 Run tests on command-line by typing `rspec`
 Run the web app from command-line by typing `ruby chapp.rb` , visit `localhost:4567` in browser.
 
-Bonus:
------
+Bonus - Not yet attempted:
+---------------------------
 
 If you have time you can implement the following:
 
