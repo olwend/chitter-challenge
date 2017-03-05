@@ -2,6 +2,7 @@ Chitter Challenge
 =================
 
 The aim is to write a little Twitter clone that will allow the users to post messages to a public stream.
+Partially complete.
 
 Features:
 -------
